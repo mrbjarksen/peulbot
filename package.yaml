@@ -1,0 +1,53 @@
+name:                peul-notify-discord-bot
+version:             0.1.0.0
+github:              "mrbjarksen/peul-notify-discord-bot"
+license:             BSD3
+author:              "Bjarki Baldursson Harksen"
+maintainer:          "bjarki31@gmail.com"
+copyright:           "2021 Bjarki Baldursson Harksen"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/mrbjarksen/peul-notify-discord-bot#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- scalpel
+- text
+- tagsoup
+- unliftio
+- discord-haskell
+
+library:
+  source-dirs: src
+
+executables:
+  peul-notify-discord-bot-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - peul-notify-discord-bot
+
+tests:
+  peul-notify-discord-bot-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - peul-notify-discord-bot

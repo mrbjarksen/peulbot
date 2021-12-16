@@ -1,0 +1,6 @@
+auth_token
+
+.stack-work/
+discord-bot.cabal
+*~
+stack.yaml.lock
