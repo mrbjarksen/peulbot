@@ -1,6 +1,6 @@
-name:                peul-notify-discord-bot
+name:                peulbot
 version:             0.1.0.0
-github:              "mrbjarksen/peul-notify-discord-bot"
+github:              "mrbjarksen/peulbot"
 license:             BSD3
 author:              "Bjarki Baldursson Harksen"
 maintainer:          "bjarki31@gmail.com"
@@ -17,7 +17,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/mrbjarksen/peul-notify-discord-bot#readme>
+description:         Please see the README on GitHub at <https://github.com/mrbjarksen/peulbot#readme>
 
 dependencies:
 - base >= 4.7 && < 5
@@ -39,7 +39,7 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - peul-notify-discord-bot
+    - peulbot
 
 tests:
   peul-notify-discord-bot-test:
@@ -50,4 +50,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - peul-notify-discord-bot
+    - peulbot
