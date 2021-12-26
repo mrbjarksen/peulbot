@@ -6,7 +6,6 @@ import Control.Monad ( forM_, void, unless )
 
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Text.Read ( decimal )
 
 import UnliftIO ( liftIO )
 import UnliftIO.Concurrent
@@ -51,8 +50,8 @@ eventHandler event = case event of
                 void $ restCall $ R.CreateMessage (messageChannel msg) $ 
                     T.pack $ "https://projecteuler.net/problem=" ++ show n
                 threadDelay $ 2 * 10^6
-            Just (CommandError s) -> do
-                void $ restCall $ R.CreateMessage (messageChannel msg) s
+            Just (CommandError err) -> do
+                void $ restCall $ R.CreateMessage (messageChannel msg) err
                 threadDelay $ 2 * 10^6
             Nothing -> return ()
     _ -> return ()

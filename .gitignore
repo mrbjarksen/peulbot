@@ -1,4 +1,6 @@
 auth_token
+account_info
+cookie_jar
 
 .stack-work/
 peul-notify-discord-bot.cabal
