@@ -1,3 +1,3 @@
-# peul-notify-discord-bot
+# peulbot
 
-A discord bot that notifies whenever someone (from a given pool of users) solves a problem.
+A discord bot for tracking progress in Project Euler amongst a group of friends/rivals.
