@@ -1,6 +1,6 @@
 auth_token
 
 .stack-work/
-peul-notify-discord-bot.cabal
+*.cabal
 *~
 stack.yaml.lock
