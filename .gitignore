@@ -4,3 +4,7 @@ auth_token
 *.cabal
 *~
 stack.yaml.lock
+
+libdevice.10.bc
+__pycache__
+model/
